@@ -51,7 +51,7 @@ $iconClasses = Flux::classes('size-4')
                 <?php if ($icon): ?>
                     <div class="relative">
                         <?php if (is_string($icon) && $icon !== ''): ?>
-                            <flux:icon :icon="$icon" :variant="$iconVariant" class="in-data-flux-menu:text-zinc-400 in-data-flux-menu:dark:text-white/80 in-data-flux-menu:[[data-flux-sidebar-group-dropdown]>button:hover_&]:text-current [[data-flux-sidebar-group-dropdown]>button[data-open]_&]:text-current size-4" />
+                            <flux:icon :icon="$icon" :variant="$iconVariant" :class="$iconClasses->add('in-data-flux-menu:text-zinc-400 in-data-flux-menu:dark:text-white/80 in-data-flux-menu:[[data-flux-sidebar-group-dropdown]>button:hover_&]:text-current [[data-flux-sidebar-group-dropdown]>button[data-open]_&]:text-current size-4')" />
                         <?php else: ?>
                             {{ $icon }}
                         <?php endif; ?>
